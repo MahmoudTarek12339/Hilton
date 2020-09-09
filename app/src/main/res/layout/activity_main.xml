@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/hilton"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:layout_below="@id/image1"
+        >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description of The Hotel:"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hilton Sharm WaterFalls Resort is located Ras Umm Sid the Rooms has very Quiet Views where Guests will enjoy watching the calm Waterfalls and beautiful sunsets in the evening .\nGuests can also the Rock formations around the edge of the sea where the waves clash on the rock , the scenery is simply stunning .if you want to go to Restaurants"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/text1"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel Policies :"
+        android:layout_margin="10dp"
+        android:layout_below="@id/text2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access is 2PM Check-out is 2PM"
+        android:layout_margin="15dp"
+        android:gravity="bottom"
+        android:layout_toRightOf="@id/text3"
+        android:layout_below="@id/text2"
+        />
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pets :"
+        android:layout_margin="10dp"
+        android:layout_below="@id/text3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pets not allowed"
+        android:layout_margin="15dp"
+        android:paddingLeft="85dp"
+        android:gravity="bottom"
+        android:layout_toRightOf="@id/text5"
+        android:layout_below="@id/text3"
+        />
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Optional plugins :"
+        android:layout_margin="10dp"
+        android:layout_below="@id/text5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The following fees and deposits are changed by the property at time of Service, check in, or check out . \nAirport shuttle fee : USD 20.00 per Vehicle (one Way) , Airport shuttle fee per child."
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/text7"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Served it"
+        android:textSize="32sp"
+        android:background="#00897b"
+        android:layout_margin="10dp"/>
+    </RelativeLayout>
+</RelativeLayout>
